@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+<nav>
+    <h1>To Do List</h1>
+</nav>
+
+<main>
+    <div class="create-task">
+        <div class="card-header">
+        <h2>Create Task</h2>
+        </div>
+        <div class="inputTask">
+            <input type="text" placeholder="New Task Name" class="input-text" id="input-text">
+            <span></span>
+            <button class="addTask"  onclick="AddTask()" >Add Task List <i class="fas fa-plus"></i></button>
+        </div>
+    </div>
+
+    <div class="alert-info"></div>
+
+
+    <div class="task-list">
+         <div class="card-header">
+            <h2>Task List</h2>
+
+            <span><button class="button-done"onClick="doneCheck()">Tamamlandı</button></span>
+            <span><button class="button-delete" onclick="deleteList()">Listeden Çıkar</button></span>
+            <span><button class="button-selectAll" onclick="selectAll()">Tümünü Seç</button></span>
+
+        </div>
+
+
+        <div class="task-list-text">
+            <ul class="text" id="text">
+               
+
+              
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="completed-tasks">
+        <div class="card-header">
+            <h2>Completed Tasks</h2>
+            <button class="button-clear" >Clear List</button>
+        </div>
+        <div class="completed-tasks-text">
+            <ul class="text-check" id="text-check">
+                <li class="text-check-item">Lorem ipsum.</li>
+                <li class="text-check-item">Lorem ipsum.</li>
+                <li class="text-check-item">Lorem ipsum.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="city">
+        <select name="cities" id="city">
+            <option value="" disabled selected hidden>Şehir Seçin</option>
+            <option value="İzmir">İzmir</option>
+            <option value="İstanbul">İstanbul</option>
+            <option value="Ankara">Ankara</option>
+            <option value="Bursa">Bursa</option>
+        </select>
+    </div>
+
+
+
+
+
+    <footer> © 2020 Sercan Özen.</footer>
+
+
+
+
+</main>
+
+
+
+</div>
+
+
+
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
